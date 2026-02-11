@@ -16,8 +16,10 @@ class Dog(Animal):
     def chrome(self):
         return f' hello from  a method in dog class'
 #add a class cat that inherits from animal
-#add speak method-meow
-
+class Cat(Animal):
+    # add speak method-meow
+    def speak(self):
+        return'meow meow'
 #create a dog object
 mydog=Dog("bob",9)
 print(mydog.name)
@@ -28,5 +30,8 @@ print(mydog.speak())
 #calling our own method
 print(mydog.chrome())
 #create a  cat object
+mycat=Cat('whispers',3)
 #call the speak method
+print(mycat.speak())
 #call me the supermethod()
+print(mycat.supermethod())
